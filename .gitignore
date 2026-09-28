@@ -1,0 +1,27 @@
+# dependências
+node_modules/
+
+# build / cache do Next.js
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# banco de dados local, backups e arquivos enviados
+data/
+backups/
+
+# variáveis de ambiente (nunca versionar segredos)
+.env
+.env.local
+.env.*.local
+
+# logs e temporários
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.tmp/
+coverage/
+test-results/
+playwright-report/

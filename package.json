@@ -1,0 +1,53 @@
+{
+  "name": "la-motores-e-bombas",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site institucional + sistema de gestão (clientes, ordens de serviço, produtos, vendas, financeiro, relatórios e documentos) da LA Motores e Bombas.",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx scripts/db-migrate.ts",
+    "db:seed": "tsx scripts/db-seed.ts",
+    "db:demo": "tsx scripts/db-seed-demo.ts",
+    "db:demo:clear": "tsx scripts/db-clear-demo.ts",
+    "db:backup": "tsx scripts/db-backup.ts",
+    "db:reset": "tsx scripts/db-reset.ts",
+    "user:reset-password": "tsx scripts/user-reset-password.ts",
+    "setup": "npm run db:migrate && npm run db:seed && npm run db:demo",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@libsql/client": "^0.18.0",
+    "drizzle-orm": "^0.45.3",
+    "lucide-react": "^1.48.0",
+    "next": "^16.3.6",
+    "pdfkit": "^0.20.2",
+    "qrcode": "^1.5.4",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "server-only": "^0.0.1",
+    "sharp": "^0.35.4",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.0",
+    "@types/pdfkit": "^0.17.0",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "drizzle-kit": "^0.31.11",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.3.6",
+    "tsx": "^4.21.0",
+    "typescript": "~5.9.3",
+    "vitest": "^5.0.1"
+  }
+}
