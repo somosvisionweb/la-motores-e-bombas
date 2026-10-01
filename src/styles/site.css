@@ -1113,6 +1113,8 @@ a.site-contact-card:hover {
   .site-fab {
     width: 58px;
     height: 58px;
+    /* No celular o selo "Powered by Netlify" ocupa o canto inferior direito; sobe o botão para não sobrepor. */
+    bottom: 74px;
     padding: 0;
     justify-content: center;
   }
